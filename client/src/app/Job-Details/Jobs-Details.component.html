@@ -1,0 +1,24 @@
+<h2>Job Details</h2> 
+
+<hr/>
+<div *ngIf="JobsDetailsComponent">
+  <div>
+    <label><b>Salary </b></label> {{job.salary}}
+  </div>
+  <div>
+    <label><b>Position </b></label> {{job.position}}
+  </div>
+  <div>
+    <label><b>Company </b></label> {{job.company}}
+  </div>  
+  <div>
+      <label><b>Description </b></label> {{job.description}}
+    </div>
+    <div>
+      <label><b>Location </b></label> {{job.location}}
+    </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Jobs List</button><br>

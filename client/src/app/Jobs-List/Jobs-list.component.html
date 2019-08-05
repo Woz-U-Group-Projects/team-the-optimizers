@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Job List</h2>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Salary</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let job of jobs | async">
+            <td>{{job.company}}</td>
+            <td>{{job.salary}}</td>
+            <td>{{job.position}}</td>
+            <td>{{job.location}}</td>
+            <td>{{job.description}}</td>
+            <td>
+                <button (click)="deleteJobs(job.id)" class="btn btn-danger">Delete</button>
+                <button (click)="JobsDetails(job.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
