@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Group List</h2>
+    </div>
+    <div class="card">
+        <div class="card-body">
+                    </div>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>GroupsName</th>
+            <th>Location</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let group of groups | async">
+            <td>{{group.GroupsName}}</td>
+            <td>{{group.Location}}</td>
+            <td>{{group.Description}}</td>
+            <td>
+                <button (click)="deleteGroups(Groups.id)" class="btn btn-danger">Delete</button>
+                <button (click)="GroupsDetails(Groups.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

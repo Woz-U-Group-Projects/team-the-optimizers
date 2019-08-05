@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<h2>Group Details</h2> 
+
+<hr/>
+<div *ngIf="Group-Details">
+  <div>
+    <label><b>GroupsName </b></label> {{groups.GroupsName}}
+  </div>  
+  <div>
+      <label><b>Description </b></label> {{groups.Description}}
+    </div>
+    <div>
+      <label><b>Location </b></label> {{groups.Location}}
+    </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Groups List</button><br>
