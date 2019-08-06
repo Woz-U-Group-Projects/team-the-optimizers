@@ -1,3 +1,5 @@
+import { AboutusComponent } from './AboutUs/aboutus.component';
+import { HomeComponent } from './Home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -9,6 +11,9 @@ import { JobsDetailsComponent } from './Job-Details/Jobs-Details.component';
 import { JobslistComponent } from './Jobs-List/Jobs-list.component';
 import { SearchComponent } from './search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+// import { CreateGroupsComponent } from './Create-Group/Create-Groups.component';
+// import { GroupsDetailsComponent } from './Group-Details/Groups-Details.component';
+// import { GroupslistComponent } from './Groups-List/Groups-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CreateJobsComponent,
     JobsDetailsComponent,
     JobslistComponent,
-    SearchComponent
+    SearchComponent,
+    HomeComponent,
+    AboutusComponent,
+    // CreateGroupsComponent,
+    // GroupsDetailsComponent,
+    // GroupslistComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,24 +12,24 @@ import { JobslistComponent } from "../Jobs-List/Jobs-list.component";
 export class JobsDetailsComponent implements OnInit {
 
   id: number;
-  job: Jobs;
+  jobs: Jobs;
 
   constructor(private route: ActivatedRoute,private router: Router,
     private jobsService: JobsService) { }
 
   ngOnInit() {
-    this.job = new Jobs();
+    this.jobs = new Jobs();
 
     this.id = this.route.snapshot.params['id'];
     
     this.jobsService.getJobs(this.id)
       .subscribe(data => {
         console.log(data)
-        this.job = data;
+        this.jobs = data;
       }, error => console.log(error));
   }
 
   list(){
-    this.router.navigate(['/jobs']);
+    this.router.navigate(['jobs']);
   }
 }

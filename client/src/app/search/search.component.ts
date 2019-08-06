@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
 })
 export class SearchComponent {
   words = [
-    
+
   ];
 
   filteredWords = this.words;
