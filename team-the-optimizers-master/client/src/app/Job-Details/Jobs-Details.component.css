@@ -1,0 +1,18 @@
+h2 {
+  font-size: 200%;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(189, 208, 158);
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border-color: rgb(0, 0, 0);
+  border-radius: 4px;
+}
+label {
+  margin: 6px;
+  font-family: "Oswald", sans-serif;
+}
+b {
+  padding: 10px;
+}

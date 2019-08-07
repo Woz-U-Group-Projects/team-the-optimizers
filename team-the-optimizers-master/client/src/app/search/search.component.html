@@ -1,0 +1,11 @@
+<input placeholder="search term" [(ngModel)]="term" />
+<button (click)="doSearch()">Search</button>
+<button (click)="resetSearch()">Reset</button>
+<hr />
+Searching for: {{ term }}
+<hr />
+<ul>
+  <li *ngFor="let word of filteredWords">
+    {{ word }}
+  </li>
+</ul>
